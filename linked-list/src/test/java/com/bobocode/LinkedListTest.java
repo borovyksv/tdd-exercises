@@ -40,7 +40,7 @@ public class LinkedListTest {
     @Test
     public void testAddLastElementByIndex() {
         list.add(2, 5);
-        assertThat(list.getLast(), is(5));
+        assertThat(list.get(2), is(5));
     }
 
     @Test(expected = IndexOutOfBoundsException.class)

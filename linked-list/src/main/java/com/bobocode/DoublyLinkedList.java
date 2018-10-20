@@ -63,7 +63,10 @@ public class DoublyLinkedList<E> implements List<E> {
             current.next.prev = newNode;
             first = newNode;
         } else {
-            add(element);
+            current.prev.next = newNode;
+            if (current.next != null) {
+                current.next.prev = newNode;
+            }
         }
         size++;
     }

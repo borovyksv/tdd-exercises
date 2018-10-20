@@ -1,23 +1,15 @@
 package com.bobocode;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import java.util.NoSuchElementException;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-@RunWith(JUnit4.class)
-public class LinkedListTest {
-    private List<Integer> list;
 
-    @Before
-    public void init() {
-        list = DoublyLinkedList.of(0, 1, 2);
-    }
+public abstract class LinkedListTest {
+    List<Integer> list;
 
     @Test
     public void testAddElements() {

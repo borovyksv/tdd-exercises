@@ -209,11 +209,6 @@ public class SingleLinkedList<E> implements List<E> {
         private E element;
         private Node<E> next;
 
-        public Node(E element, Node<E> next) {
-            this.element = element;
-            this.next = next;
-        }
-
         public Node(E element) {
             this.element = element;
         }
